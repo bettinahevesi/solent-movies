@@ -1,17 +1,31 @@
 
 /* HEADER */
-.navbar{box-shadow: 0px 2px 2px red;}
+.navbar{
+    box-shadow: 0px 2px 2px red;
+}
 	
 /* NAVBAR COLOR*/
-.bg-light{background: red !important;}
+.bg-light{
+    background: red !important;
+}
 
 /* LOGO STYLE*/
-.navbar-light .navbar-brand {color: black; font-size:20px}
+.navbar-light .navbar-brand {
+    color: black;
+    font-size:20px
+}
 
 /*HOME, MOVIES,TV SHOWS,LOGIN STYLE*/   
-.navbar-light .navbar-nav .nav-link {color: black; font-size:15px}
+.navbar-light .navbar-nav .nav-link {
+    color: black; 
+    font-size:15px
+}
+
 /* Why does the text move? */
-.navbar-light .navbar-nav .nav-link:hover {color: white; font-weight:bold;}
+.navbar-light .navbar-nav .nav-link:hover {
+    color: white; 
+    font-weight:bold;
+}
 
 /*SEARCH STYLE*/
 .btn-outline-success {
@@ -20,14 +34,26 @@
     background-image: none;
     border-color: black;
 }
+
 .btn-outline-success:hover {
     color: white;
     background-color: black;
     background-image: none;
     border-color: black;
 }
-#login a{color: black; font-size:15px; padding-left:5px; text-weight:normal;}
-#login a:hover {color: white; font-weight:bold; text-decoration:none;}
+
+#login a{
+    color: black; 
+    font-size:15px; 
+    padding-left:5px; 
+    text-weight:normal;
+}
+
+#login a:hover {
+    color: white; 
+    font-weight:bold; 
+    text-decoration:none;
+}
 
 /*HOME.PHP */
 .start-button{
@@ -55,7 +81,6 @@
 	text-decoration:none;
 }
 
-
   .view-button  {
     background-color: red;
     border: none;
@@ -69,52 +94,55 @@
     cursor: pointer;
 	border-radius: 8x;
 }
-}
+
 .view-button:hover{
-
-background-color: black;
-text-align: center;
-padding: 10px;
-border-radius:5px;
-color: black;
-text-decoration:none;
-border-radius: 8px;}
-
-.home-background{ 
-    background-image: url('images/popcorn.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;	
-	border-radius:0px;
-}
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+    border-radius:5px;
+    color: black;
+    text-decoration:none;
+    border-radius: 8px;}
 
 /* FOOTER */
 
 .footer {
+    overflow: hidden;
     background-color: black;
-    text-align: center;
-    position: absolute;
-    width: 100%;
-    height: auto;
-    color: white;
-    margin-top: 0px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    color:white;
+    position: relative;
+    top:0;
 }
 
-.betti{
-	color:white;
-    text-align:center ;
-	padding-bottom:0px;
-	text-decoration:none;
-} 
+.footer p {
+    margin-top: 10px;
+    text-align: left;
+    float: left;
+    margin-left: 30px;
+    color:white;
+}
+
+.col-xs-4{
+  position: relative;
+  text-align:center;
+ }
+
+.socialmedia-icons {
+    text-align: center;
+    text-decoration: none;
+    position: inline-block;
+}
+
+.icons{
+    width: 3rem;
+    height: 3rem;  
+}
+
 /* MOVIES.PHP */
 /* MOVIES GALLEY*/
-.movies-main{margin: 50px 20px 0px 20px;}	
-
-/* I do not no what is this but it is important because it changes the size of the pics */
-}
+.movies-main{
+    margin: 50px 20px 0px 20px;
+}	
 
 .image-box {
     font-family:sans-serif;
@@ -125,52 +153,65 @@ border-radius: 8px;}
 	max-height:370px;
 	position: relative;
 }
-#row1{padding-bottom:30px;}
+
+#row1{
+    padding-bottom:30px;
+}
+
 img{
-opacity: 1;
-display: block;
-width:100%;
-height: auto;
-transition: .5s ease;
-border-radius:10px;
+    opacity: 1;
+    display: block;
+    width:100%;
+    height: auto;
+    transition: .5s ease;
+    border-radius:10px;
 }
+
 .content{ 
-width:150px;          
-position: absolute;
-top:45%;
-left: 50%;
-transform: translate(-50%, -50%);
--ms-transform: translate(-50%, -50%);
-text-transform: none;
-font-size: 30px;
-color:white;
-white-space: nowrap;
-overflow: hidden;
-opacity:1;
+    width:150px;          
+    position: absolute;
+    top:45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-transform: none;
+    font-size: 30px;
+    color:white;
+    white-space: nowrap;
+    overflow: hidden;
+    opacity:1;
 }
+
 .content a{
-font-size: 20px;
-display: block;
-background-color: red;
-text-align: center;
-padding: 10px;
-cursor: pointer;
-border-radius:5px;
-color: black;
-opacity:1;
+    font-size: 20px;
+    display: block;
+    background-color: red;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    border-radius:5px;
+    color: black;
+    opacity:1;
 }
-.content a:hover{ text-decoration:none;background:black;color: white!important;}
-.overlay{opacity: 0}
+
+.content a:hover{ 
+    text-decoration:none;
+    background:black;
+    color: white!important;
+}
+
+.overlay{
+    opacity: 0
+}
+
 .image-box:hover img{opacity: 0.5}
 .image-box:hover .overlay{opacity: 1}
 
-
-/* MOVIE_VIEW_PAGE.PHP */
+/* MOVIE_VIEW_PAGE.PHP */
 /* MOvie cover background */
 .col-12 {padding-left:0px; padding-right:0px;}
 
 .movie-cover-fightclub {
-    background-image: url("../images/fightclub-cover.jpg");
     height: 92vh;
     background-attachment: fixed;
     background-position: center;
@@ -205,16 +246,48 @@ opacity:1;
   text-align: left;
 }
 
-.movie-info-title{margin-left:20px;color:white;}
+.movie-info-title{
+    margin-left:20px;
+    color:white;  
+    font-weight: 100;
+}
 
-.menu-title{background-color:#213233;height:40px;}
-.fighclub-carousel{width:100%;height:200px;margin-right:400px; }
-.item{background:; width:100%; height:200px;}
-.img-f{width:100%; height:200px;}
+.menu-title{
+    background-color:#1f1f21;
+    height:50px;
+    border-radius:5px;
+}
 
-table {margin-right:30px; font-family: arial, sans-serif; border-collapse: collapse; width: 100%; }
+.fighclub-carousel{
+    width:100%;
+    height:200px;
+    margin-right:
+    400px; 
+}
 
-td, th {border: 1px solid #dddddd; text-align: left; padding: 8px;}
+.item{
+    background:;
+    width:100%;
+    height:200px;
+}
+
+.img-f{
+    width:100%;
+    height:200px;
+}
+
+table {
+    margin-right:30px;
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%; 
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
 
 tr:nth-child(even) {background-color: white;}
  
@@ -225,23 +298,62 @@ tr:nth-child(even) {background-color: white;}
 .justify-content-center .nav-link:hover{color:white;}
 .fa-user {width: 24px !important; height: 24px !important;}
 
-/* LOGIN.PHP */
+/* list */
+.list-group {
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    margin-bottom: 0;
+}
 
-.login-box{
-	margin-top:50px;
+@media only screen and (max-width: 768px) {
+  .list-group  {
+    padding: 0px 50px;
+}
+  iframe {
+    width:auto;
+}
+  #trailer-title{
+    margin-left:50px;
+  }
+}
+
+.list-group-item.active {
+    z-index: 2;
+    color: #fff;
+    background-color: black !important;
+    border-color: black;
+}
+/* LOGIN.PHP */
+.login-section .register-section{
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/cinema.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+	
+.login-box .register-box{
     width: 320px;
     height: 420px;
     background: rgba(0, 0, 0, 0.8);
     color: #fff;
-    top: 50%;
-    left: 50%;
-    position: absolute;
-    transform: translate(-50%,-50%);
+    position: relative;
     box-sizing: border-box;
     padding: 70px 30px;
 	border:solid white 1px;
 	border-radius:10px;
-}
+}  
 
 h1{
     margin: 0;
@@ -249,15 +361,18 @@ h1{
     text-align: center;
     font-size: 22px;
 }
+
 .login-box p{
     margin: 0;
     padding: 0;
     font-weight: bold;
 }
+
 .login-box input{
     width: 100%;
     margin-bottom: 20px;
 }
+
 .login-box input[type="text"], input[type="password"], input[type="email"]
 {
     border: none;
@@ -268,8 +383,8 @@ h1{
     color: #fff;
     font-size: 16px;
 }
-.login-box input[type="submit"]
-{
+
+.login-box input[type="submit"]{
     border: none;
     outline: none;
     height: 40px;
@@ -278,8 +393,8 @@ h1{
     font-size: 18px;
     border-radius: 10px;
 }
-.login-box input[type="submit"]:hover
-{
+
+.login-box input[type="submit"]:hover{
     cursor: pointer;
     background: white;
     color: black;
@@ -290,31 +405,32 @@ h1{
     font-size: 14px;
     color: #fff;
 }
-.login-box a:hover
-{
+
+.login-box a:hover{
     color: red;
 }
 
-  
-.info{margin:20px}
-.dropdown-menu-right {right: 0; left: auto;}
+.info{
+    margin:20px 0px
+}
+.dropdown-menu-right{
+    right: 0; 
+    left: auto;
+}
 
 #directors_list {
 	max-height: 100px;
 	overflow-y: scroll;
 }
 
-
-
 #livesearch {
     border: 1px solid rgb(165, 172, 178);
     color: black;
     background-color: white;
     border-radius:5px;
-    position: absolute;
-    margin-top: 40px;
-    margin-right: 20px;
+    position: relative;
 }
+
 #livesearch a{
      text-decoration: none; 
      color:black;}
@@ -325,5 +441,7 @@ h1{
   width:100px;
 	}}
 
- .image-box{padding:5px;}
+.image-box{
+    padding:5px;
+}
  
