@@ -12,45 +12,63 @@
 	 <link rel="stylesheet" type="text/css" href="style/style.css">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	 <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script><script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script> 
-	<style>
-    body{
-       margin: 0;
-       padding: 0;
-       background-size: cover;
-       background-position: center;
-       font-family: sans-serif;
-       } 	
-	   .footer{margin-top:600px;}
+	  <link rel="icon" href="images/solentmovies-logo.png">
+	  
+<style>
+.login-section {
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/cinema.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+	
+.login-box {
+    width: 320px;
+    height: 420px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    position: relative;
+    box-sizing: border-box;
+    padding: 70px 30px;
+	border:solid white 1px;
+	border-radius:10px;
+}  
 </style>
-</head>
 
-    
-	<body background="images/cinema.jpg">
-	
-			<!-- HEADER -->
-		<?php include 'header.php';?>
-	
-	
-   	 
+</head>
+<!-- HEADER -->
+<?php include 'header.php';?>
+<!-- LOGIN SECTION-background -->	
+ <div class="login-section">	
+<!-- LOGIN BOX -->   	 
     <div class="login-box">
         <h1>Login Here</h1>
-            <form action="process_login.php" method="POST">
-            <p>Username</p>
-            <input type="text" name="user_name" placeholder="Enter Username">
-            <p>Password</p>
-            <input type="password" name="password" placeholder="Enter Password">
-            <input type="submit" name="submit" value="Login!">
-            <a href="#">Forget Password</a> 
+           <form action="process_login.php" method="POST">
+             <p>Username</p>
+             <input type="text" name="user_name" placeholder="Enter Username">
+            
+             <p>Password</p>
+             <input type="password" name="password" placeholder="Enter Password">
+             <input type="submit" name="submit" value="Log In">
+            
+             <a href="register.php">New to Solent Movies? Sign up now.</a> 
 			
-            </form>
-        
-        
-        </div>
+           </form>
+    </div>
+ </div>
 
 <!-- FOOTER -->
-		<?php include 'footer.php';?>
+<?php include 'footer.php';?>
 	
-
-
-    </body>
+</body>
 </html>

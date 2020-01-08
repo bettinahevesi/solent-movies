@@ -16,14 +16,14 @@ if($row=$results->fetch())
 {
 	
     $_SESSION["user_id"] = $row["user_id"];
-	echo $_SESSION["user_id"];
+	header ("Location: profile.php");
 
     // Redirect to the user profile page
-    header ("Location: profile.php");
+ 
 }
 else
 {
    // The wrong password was supplied!
-    echo "Incorrect password!";
+    echo "Incorrect username or password!";
 }
 ?>

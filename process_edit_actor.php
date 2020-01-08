@@ -18,7 +18,7 @@ $q = "UPDATE actors
 			actor_story='$actor_story',
             country='$country'			
 		WHERE actor_id='$actor_id'";
-echo $q;
+
 		$result = $conn->query($q);
 
 // Check if update was successful
